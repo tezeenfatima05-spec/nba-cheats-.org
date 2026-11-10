@@ -8,9 +8,9 @@ export const en: Translations = {
   site: {
     name: 'NBA Cheats',
     domain: 'nbacheats.org',
-    title: 'NBA 2K26 Cheats — Auto Green, Unlock All & Attribute Changer | NBA Cheats',
+    title: 'NBA 2K26 Cheats — Auto Green & Unlock All | NBA Cheats',
     description:
-      'Explore NBA 2K26 cheats for PC featuring Auto Green timing, unlock all clothes, animations and equipment, max badges, attribute changer, custom configurations, and Cloud DMA support at NBA Cheats.',
+      'NBA 2K26 cheats for PC: Auto Green, unlock-all gear, attributes, configs, and optional Cloud DMA. Guides and checkout at nbacheats.org.',
     discord: DISCORD_INVITE_URL,
   },
   nav: [
@@ -491,6 +491,7 @@ export const en: Translations = {
           heading: 'Who we are',
           paragraphs: [
             'NBA Cheats is a PC-focused resource for NBA 2K26 players exploring Auto Green, unlock-all, attribute editing, and Cloud DMA workflows. We publish setup guides and live status notes so you can evaluate NBA 2K26 cheats before checkout.',
+            'Loader status, patch-day banners, and Discord #status updates are part of how we communicate online/offline states—we summarize those signals on the homepage and in blog patch checklists.',
             'All product names are used for identification only.',
           ],
         },
@@ -518,6 +519,7 @@ export const en: Translations = {
           heading: 'Information we collect',
           paragraphs: [
             'We may collect standard web analytics such as page views, device type, browser, and approximate region through Google Analytics when enabled. Checkout and license delivery happen on external checkout pages—we do not store payment card data on nbacheats.org.',
+            'Privacy-related requests about stored analytics or support tickets can be sent through the Support page; we respond using the email address you provide and delete ticket content when the issue is closed.',
           ],
         },
         {

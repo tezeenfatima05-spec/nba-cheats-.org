@@ -180,7 +180,7 @@ const nbaProduct: ProductPage = {
   name: 'NBA 2K26',
   title: 'NBA 2K26 Cheats',
   subtitle: 'Auto Green timing, unlock-all cosmetics, attribute changer, and Cloud DMA support for PC.',
-  desc: 'NBA 2K26 cheats for PC with Auto Green, unlock all clothes and animations, max badges, full attribute editor, config profiles, and Cloud DMA support.',
+  desc: 'NBA 2K26 PC cheats: Auto Green, unlock-all gear, badges, attribute editor, configs, and Cloud DMA support.',
   features: [
     'Auto Green timing',
     'Unlock all clothes & animations',

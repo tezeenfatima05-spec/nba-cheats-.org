@@ -63,6 +63,9 @@ export function initBlogIndexFilters(emptyMessage: string) {
   };
 
   filters.forEach((btn) => {
+    if (btn.hasAttribute('data-blog-filter-bound')) return;
+    btn.setAttribute('data-blog-filter-bound', '');
+
     btn.addEventListener('click', () => {
       filters.forEach((b) => b.setAttribute('aria-pressed', 'false'));
       btn.setAttribute('aria-pressed', 'true');
@@ -75,7 +78,10 @@ export function initBlogIndexFilters(emptyMessage: string) {
     apply();
   };
 
-  document.addEventListener('starwind:value-change', onSortChange);
+  if (!(document as Document & { __blogSortListener?: boolean }).__blogSortListener) {
+    document.addEventListener('starwind:value-change', onSortChange);
+    (document as Document & { __blogSortListener?: boolean }).__blogSortListener = true;
+  }
 
   // Starwind select hydrates after first paint — re-apply once ready.
   requestAnimationFrame(apply);

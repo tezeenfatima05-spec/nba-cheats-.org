@@ -39,18 +39,44 @@ export function absoluteAssetUrl(path: string): string {
   return `${SITE_ORIGIN}${normalized}`;
 }
 
+export function clampMetaDescription(text: string, max = 155): string {
+  const normalized = text.replace(/\s+/g, ' ').trim();
+  if (normalized.length <= max) return normalized;
+  const slice = normalized.slice(0, max - 1);
+  const lastSpace = slice.lastIndexOf(' ');
+  const trimmed = (lastSpace > 70 ? slice.slice(0, lastSpace) : slice).trim();
+  return `${trimmed}…`;
+}
+
+export function clampPageTitle(title: string, max = 60): string {
+  if (title.length <= max) return title;
+  const brandSuffix = title.match(/(\s\|\sNBA Cheats)$/);
+  if (brandSuffix) {
+    const suffix = brandSuffix[1];
+    const keyword = title.slice(0, -suffix.length).trim();
+    const maxKeyword = max - suffix.length;
+    if (maxKeyword < 12) return title.slice(0, max - 1).trim() + '…';
+    let trimmed = keyword.slice(0, maxKeyword);
+    const lastSpace = trimmed.lastIndexOf(' ');
+    if (lastSpace > 20) trimmed = trimmed.slice(0, lastSpace);
+    return `${trimmed.trim()}${suffix}`;
+  }
+  const slice = title.slice(0, max - 1);
+  const lastSpace = slice.lastIndexOf(' ');
+  return `${(lastSpace > 20 ? slice.slice(0, lastSpace) : slice).trim()}…`;
+}
+
 export function resolvePageSeo(pathname: string): { title: string; description: string } {
   const entry = getPageSeoEntry(pathname);
-  if (entry) return entry;
-  return { title: t.site.title, description: t.site.description };
+  const raw = entry ?? { title: t.site.title, description: t.site.description };
+  return {
+    title: clampPageTitle(raw.title),
+    description: clampMetaDescription(raw.description),
+  };
 }
 
 export function pageTitle(keyword: string, brand = t.site.name): string {
-  const suffix = ` | ${brand}`;
-  const max = 60;
-  if (`${keyword}${suffix}`.length <= max) return `${keyword}${suffix}`;
-  const trimmed = keyword.slice(0, Math.max(20, max - suffix.length - 1)).trim();
-  return `${trimmed}${suffix}`;
+  return clampPageTitle(`${keyword} | ${brand}`);
 }
 
 export const DEFAULT_OG_IMAGE_WIDTH = 1200;

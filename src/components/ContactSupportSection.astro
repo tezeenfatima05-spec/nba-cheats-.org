@@ -1,5 +1,6 @@
 ---
 import '../styles/support-section.css';
+import { DISCORD_INVITE_URL } from '../config/site';
 import { t } from '../i18n';
 import Icon from './icons/Icon.astro';
 import type { IconName } from './icons/types';
@@ -20,6 +21,9 @@ interface Props {
 
 const { titleId = 'support-title', showTicketTips = false, class: className } = Astro.props;
 const c = t.support;
+
+const channelHref = (linkLabel: string, href: string) =>
+  linkLabel === 'Join Discord' ? DISCORD_INVITE_URL : href;
 ---
 
 <section
@@ -36,7 +40,11 @@ const c = t.support;
 
     <ul class="support-section__cards">
       {
-        c.channels.map((channel) => (
+        c.channels.map((channel) => {
+          const href = channelHref(channel.linkLabel, channel.href);
+          const isExternal = href.startsWith('http');
+
+          return (
           <li>
             <Card class="group flex h-full flex-col transition-shadow hover:shadow-md">
               <CardHeader class="space-y-3">
@@ -51,10 +59,11 @@ const c = t.support;
               <CardFooter>
                 <Button
                   as="a"
-                  href={channel.href}
+                  href={href}
                   variant="outline"
                   size="sm"
                   class="w-full"
+                  {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 >
                   {channel.linkLabel}
                   <Icon name="arrowRight" size={17} />
@@ -62,7 +71,8 @@ const c = t.support;
               </CardFooter>
             </Card>
           </li>
-        ))
+          );
+        })
       }
     </ul>
 

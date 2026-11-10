@@ -9,52 +9,52 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'NBA 2K26 Cheats — Auto Green, Unlock All & Attribute Changer | NBA Cheats',
+    title: 'NBA 2K26 Cheats – Auto Green, Unlock All & Attribute Changer',
     description:
-      'Explore NBA 2K26 cheats for PC featuring Auto Green timing, unlock all clothes, animations and equipment, max badges, attribute changer, custom configurations, and Cloud DMA support at NBA Cheats.',
+      'Explore NBA 2K26 cheats for PC featuring Auto Green timing, unlock all clothes, animations and equipment, max badges, attribute changer, custom.',
   },
   '/products/nba-2k26-cheats/': {
-    title: 'NBA 2K26 Cheats for PC — Auto Green & Unlock All | NBA Cheats',
+    title: 'NBA 2K26 Cheats for PC — Auto Green | Cheats',
     description:
-      'NBA 2K26 cheat software for PC with Auto Green, unlock-all cosmetics, max badges, attribute changer, and config profiles—feature list and secure checkout at nbacheats.org.',
+      'NBA 2K26 cheat software for PC—Auto Green, unlock-all, badges, attribute editor, and configs. Feature list and secure checkout.',
   },
   '/products/nba-2k26-cheats/nba-2k26/': {
-    title: 'NBA 2K26 Auto Green, Unlock All & Attributes | NBA Cheats',
+    title: 'NBA 2K26 Auto Green & Unlock All | Cheats',
     description:
-      'Full NBA 2K26 cheat feature list: Auto Green timing, visible unlock-all gear, attribute editor, save/load configs, stream-proof overlay, and Cloud DMA support.',
+      'Full feature list: Auto Green timing, unlock-all cosmetics, attribute editor, config profiles, stream-proof overlay, and Cloud DMA.',
   },
   '/blog/': {
-    title: 'NBA 2K26 setup guides — Auto Green & configs | NBA Cheats',
+    title: 'NBA 2K26 setup guides — Auto Green & configs | Cheats',
     description:
-      'Auto Green tuning, unlock-all workflows, attribute presets, Cloud DMA notes, and patch-day checks for NBA 2K26 cheats on PC—guides from NBA Cheats.',
+      'Setup: Auto Green tuning, unlock-all workflows, attribute presets, Cloud DMA notes, and patch-day checks for NBA 2K26 cheats on PC.',
   },
   '/forum/': {
-    title: 'NBA 2K26 community forum — Auto Green & builds',
+    title: 'NBA 2K26 community forum — Auto Green & builds | Cheats',
     description:
-      'Community forum for NBA 2K26 cheats: Auto Green timing, MyPLAYER builds, unlock-all settings, configs, and troubleshooting on PC.',
+      'NBA 2K26 community forum: Auto Green timing, MyPLAYER builds, unlock-all settings, configs, and troubleshooting on PC.',
   },
   '/faq/': {
-    title: 'FAQ — NBA 2K26 cheats, checkout & Cloud DMA | NBA Cheats',
+    title: 'FAQ — NBA 2K26 cheats, checkout & Cloud DMA | Cheats',
     description:
-      'FAQ: Answers on NBA 2K26 Auto Green, unlock-all modules, attribute changer, checkout, Cloud DMA, and supported platforms at nbacheats.org.',
+      'Answers on NBA 2K26 Auto Green, unlock-all modules, attribute tools, checkout, Cloud DMA, and supported PC platforms.',
   },
   '/terms/': {
-    title: 'Terms & Conditions | NBA Cheats',
+    title: 'Terms & Conditions | Cheats',
     description: 'Purchase terms, license use, and refund policy for NBA Cheats products sold through nbacheats.org.',
   },
   '/privacy/': {
-    title: 'Privacy — analytics, cookies & support data | NBA Cheats',
+    title: 'Privacy — cookies & support data | Cheats',
     description:
-      'Privacy: How nbacheats.org uses analytics, cookies, and contact data when you browse or request support.',
+      'Privacy policy: how nbacheats.org uses analytics, cookies, and contact data when you browse, purchase, or request support.',
   },
   '/about/': {
-    title: 'About NBA Cheats — guides, features & status',
+    title: 'Status — About NBA Cheats guides & loader | Cheats',
     description:
-      'What NBA Cheats publishes: NBA 2K26 cheat guides, feature notes, loader status, and site updates at nbacheats.org.',
+      'What NBA Cheats publishes: NBA 2K26 cheat guides, feature notes, live loader status, patch-day updates, and editorial standards.',
   },
   '/support/': {
-    title: 'Support | NBA Cheats',
-    description: 'Get help with loader setup, Cloud DMA, and checkout for NBA 2K26 cheats on PC.',
+    title: 'Support | Cheats',
+    description: 'Loader setup, Cloud DMA, HWID, and checkout help for NBA 2K26 cheats on PC.',
   },
 };
 
