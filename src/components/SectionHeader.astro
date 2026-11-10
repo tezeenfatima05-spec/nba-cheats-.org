@@ -1,0 +1,26 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  desc?: string;
+  titleId?: string;
+  centered?: boolean;
+  wide?: boolean;
+  headingLevel?: 1 | 2;
+}
+
+const { eyebrow, title, desc, titleId, centered = false, wide = false, headingLevel = 1 } = Astro.props;
+const Heading = headingLevel === 2 ? 'h2' : 'h1';
+---
+
+<header
+  class:list={[
+    'section-header space-y-0',
+    wide && 'section-header--wide',
+    centered && 'mx-auto text-center',
+  ]}
+>
+  <p class="section-header__eyebrow">{eyebrow}</p>
+  <Heading id={titleId} class="section-header__title">{title}</Heading>
+  {desc ? <p class="section-header__subtitle">{desc}</p> : null}
+</header>

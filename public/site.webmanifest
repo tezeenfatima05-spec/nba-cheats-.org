@@ -1,0 +1,11 @@
+{
+  "name": "NBA Cheats",
+  "short_name": "NBA Cheats",
+  "description": "NBA 2K26 cheats with Auto Green, unlock all cosmetics, attribute changer, and Cloud DMA support for PC.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0D0A14",
+  "theme_color": "#7f3dee",
+  "lang": "en-US"
+}
