@@ -106,16 +106,33 @@ export const blogPosts: BlogPostFull[] = [
   },
   {
     tag: 'Setup',
-    title: 'NBA 2K26 Cloud DMA requirements',
+    title: 'NBA 2K26 Cloud DMA requirements cheats',
     slug: 'nba-2k26-cloud-dma-requirements',
     image: '/images/gameplay/screenshot-5.webp',
     desc: 'Hardware expectations and when Cloud DMA beats standard loader paths.',
+    seoTitle: 'Cloud DMA – Walk through the hardware checklist | Cheats',
+    metaDescription:
+      'Cloud DMA hardware expectations and when DMA beats standard loader paths for NBA 2K26 on PC—walk through the checklist before enabling optional mode.',
     date: 'Aug 15, 2026',
     readTime: '8 min read',
     body: [
       {
         type: 'p',
-        text: 'Cloud DMA is optional. Walk through the hardware checklist before enabling DMA mode—standard loader paths still include Auto Green, unlock-all, and attributes.',
+        text: 'Cloud DMA is optional. Walk through the hardware checklist before enabling DMA mode—standard loader paths still include Auto Green, unlock-all, and attributes. Full module list: [NBA 2K26 product details](/products/nba-2k26-cheats/nba-2k26/).',
+      },
+      { type: 'h2', text: 'When standard loader is enough' },
+      {
+        type: 'p',
+        text: 'Most players only need the external loader on a single Windows 10 or 11 rig. If Auto Green, unlock-all, and attributes cover your session, you can skip DMA entirely and avoid extra firmware steps.',
+      },
+      { type: 'h2', text: 'Hardware checklist' },
+      {
+        type: 'p',
+        text: 'Confirm second-PC or FPGA expectations in the operator portal before purchase. Note USB topology, firmware version, and whether capture cards sit between game and display—the support page documents what to photograph if setup fails.',
+      },
+      {
+        type: 'p',
+        text: 'After hardware checks, compare patch notes in the [patch-day checklist](/blog/nba-2k26-patch-day-checklist/) with the homepage status banner so you do not enable DMA while modules are offline.',
       },
     ],
   },
@@ -170,12 +187,30 @@ export const blogPosts: BlogPostFull[] = [
     slug: 'how-to-buy-nba-2k26-cheats',
     image: '/images/gameplay/screenshot-visuals.webp',
     desc: 'Checkout flow, portal access, and first-launch checklist.',
+    seoTitle: 'NBA 2K26 — how to buy cheats & portal access | Cheats',
+    metaDescription:
+      'NBA 2K26 checkout flow, operator portal access, and first-launch checklist—secure purchase steps before you open Steam or the 2K Launcher on PC.',
     date: 'Aug 11, 2026',
     readTime: '5 min read',
     body: [
       {
         type: 'p',
         text: 'Use Buy now on nbacheats.org to reach secure checkout, then follow the portal email for loader download and setup steps before launching NBA 2K26.',
+      },
+      { type: 'h2', text: 'Before checkout' },
+      {
+        type: 'p',
+        text: 'Confirm Windows version, Steam or 2K Launcher install path, and that the live status banner shows online. Skim the [Auto Green timing guide](/blog/nba-2k26-auto-green-timing/) if timing modules are your main reason to buy.',
+      },
+      { type: 'h2', text: 'After payment' },
+      {
+        type: 'p',
+        text: 'Open the operator portal from your order email, download the current loader, and import a conservative preset. Run a practice-court test before park—feature overview lives on the [NBA 2K26 cheats product page](/products/nba-2k26-cheats/nba-2k26/).',
+      },
+      { type: 'h2', text: 'If checkout blocks you' },
+      {
+        type: 'p',
+        text: 'Capture the exact error from the checkout page or loader and open a ticket on the Support page with your order email. HWID resets and portal access issues are handled there—not through public Discord DMs.',
       },
     ],
   },

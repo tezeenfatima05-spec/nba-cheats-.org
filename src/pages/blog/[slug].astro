@@ -180,7 +180,7 @@ const published = parseBlogDate(post.date);
 
           <nav class="blog-article__actions" aria-label="Continue reading">
             <Button as="a" href={PRIMARY_CHECKOUT_PATH} variant="primary" aria-label={t.ui.checkoutAria}>
-              Buy NBA 2K26 Cheats
+              Start secure checkout
               <Icon name="arrowRight" size={17} />
             </Button>
             <Button as="a" href={ROUTES.products} variant="outline">
@@ -199,6 +199,7 @@ const published = parseBlogDate(post.date);
   <SiteFaqSection
     items={getBlogFaqs(post.tag, post.slug)}
     titleId={`blog-faq-${post.slug}`}
+    headingLevel={2}
     class="border-t border-border bg-muted/20"
   />
 </BaseLayout>

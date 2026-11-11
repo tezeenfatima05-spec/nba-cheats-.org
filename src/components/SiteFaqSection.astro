@@ -16,6 +16,7 @@ interface Props {
   /** Full /faq/ experience — all topics chip bar */
   variant?: 'full' | 'contextual';
   filterTopics?: FaqTopic[];
+  headingLevel?: 1 | 2;
 }
 
 const {
@@ -25,6 +26,7 @@ const {
   class: className,
   variant = 'contextual',
   filterTopics: filterTopicsProp,
+  headingLevel,
 } = Astro.props;
 
 const copy = variant === 'full' ? SITE_FAQ_SECTION_COPY : CONTEXTUAL_FAQ_SECTION_COPY;
@@ -43,5 +45,5 @@ const showFilters = filterTopics.length > 1;
   showFilters={showFilters}
   filterTopics={filterTopics}
   class={className}
-  headingLevel={variant === 'full' ? 2 : 1}
+  headingLevel={headingLevel ?? (variant === 'full' ? 2 : 1)}
 />
