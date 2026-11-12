@@ -7,4 +7,5 @@ directory = "./dist"
 not_found_handling = "404-page"
 
 [vars]
-SITE = "https://nba-cheats--org.tazeenrooziroti.workers.dev"
+# Canonical origin for sitemap, robots, and HTML canonical/hreflang (must match live domain).
+SITE = "https://nbacheats.org"
